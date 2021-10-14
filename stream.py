@@ -201,7 +201,7 @@ def create_meeting():
 
 def get_join_url():
     minfo = bbb.get_meeting_info(args.id)
-    pwd = minfo.get_meetinginfo().get_moderatorpw()
+    pwd = minfo.get_meetinginfo().get_attendeepw()
     joinParams = {}
     joinParams['meetingID'] = args.id
     joinParams['fullName'] = args.user
